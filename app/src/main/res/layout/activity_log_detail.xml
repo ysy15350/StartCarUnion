@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="log"
+            type="com.ysy15350.startcarunion.log.model.RequestLog" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout style="@style/base_form">
+            <!-- 个人资料 -->
+
+            <include layout="@layout/form_head" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <View style="@style/view_line_short" />
+
+
+                <!--接口地址-->
+                <TextView
+                    style="@style/my_info_title"
+                    android:layout_width="wrap_content"
+                    android:text="url" />
+
+
+                <View style="@style/view_line" />
+
+                <!--接口地址-->
+                <EditText
+                    android:id="@+id/tv_company_name"
+                    style="@style/my_info_content"
+                    android:layout_margin="@dimen/dp20"
+                    android:text="@{log.url}" />
+
+
+                <View style="@style/view_line" />
+
+
+                <!--接口参数-->
+                <TextView
+                    style="@style/my_info_title"
+                    android:layout_width="wrap_content"
+                    android:text="params" />
+
+
+                <View style="@style/view_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <!--接口参数-->
+                    <EditText
+                        style="@style/my_info_content"
+                        android:text='@{log.authorization}' />
+
+                    <!--接口参数-->
+                    <EditText
+                        style="@style/my_info_content"
+                        android:layout_margin="@dimen/dp20"
+                        android:text='@{log.paramStr.replace("\n","")}' />
+
+                    <View style="@style/view_line" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_params"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/text_content"
+                            android:text="修改参数" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/view_line" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    style="@style/btn_ok"
+                    android:text="调用" />
+
+                <View style="@style/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_nickname"
+                    style="@style/my_info_item">
+
+                    <TextView
+
+                        style="@style/my_info_content"
+                        android:text="isCache" />
+
+                    <TextView
+
+                        style="@style/my_info_content"
+                        android:text="@{log.cache.toString()}" />
+
+                    <TextView
+
+                        style="@style/my_info_content"
+                        android:text="@{log.cacheTime.toString()}" />
+
+                    <TextView
+
+                        style="@style/my_info_content"
+                        android:text="code" />
+
+                    <TextView
+
+                        style="@style/my_info_content"
+                        android:text="@{log.code}" />
+
+                    <TextView
+
+                        style="@style/my_info_content"
+                        android:text="message" />
+
+                    <TextView
+                        style="@style/my_info_content"
+                        android:text="@{log.message}" />
+
+
+                </LinearLayout>
+
+
+                <View style="@style/view_line" />
+
+
+                <!--返回结果-->
+                <EditText
+                    style="@style/my_info_content"
+                    android:layout_margin="@dimen/dp20"
+                    android:text="@{log.responseStr}" />
+
+
+                <View style="@style/view_line" />
+
+
+                <!--返回结果-->
+                <TextView
+                    style="@style/my_info_title"
+                    android:layout_width="wrap_content"
+                    android:text="result" />
+
+
+                <View style="@style/view_line" />
+
+
+                <!--返回结果-->
+                <TextView
+                    style="@style/my_info_content"
+                    android:layout_margin="@dimen/dp20"
+                    android:text="@{log.responseStr}" />
+
+                <View style="@style/view_line" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

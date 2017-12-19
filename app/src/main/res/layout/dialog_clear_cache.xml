@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp40"
+    android:layout_marginStart="@dimen/dp40" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/shape_dialog"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp58"
+            android:background="@drawable/shape_dialog_top"
+            android:gravity="center"
+            android:text="是否清理缓存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:id="@+id/tv_content"
+            android:layout_width="@dimen/dp163"
+            android:layout_height="@dimen/dp163"
+            android:src="@mipmap/icon_clear_cache" />
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp55"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/dp187"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:text="取消"
+                android:textColor="#a4a4a4" />
+
+            <View style="@style/view_line_vertical" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="@dimen/dp187"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:text="确定"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_close"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_close_circle"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@mipmap/icon_close" />
+    </LinearLayout>
+
+</RelativeLayout>

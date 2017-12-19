@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/form_head" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp13"
+        android:text="@string/default_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp13"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:scaleType="fitXY"
+            android:src="@mipmap/zx_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginStart="@dimen/dp13"
+            android:scaleType="fitXY"
+            android:src="@mipmap/zx_bg" />
+    </LinearLayout>
+
+    <View style="@style/view_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp13"
+        android:layout_weight="1"
+        android:text="@string/default_text"
+        android:textColor="@color/text_content"
+        android:textSize="@dimen/sp18" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/btn_ok"
+        android:text="回复" />
+
+</LinearLayout>

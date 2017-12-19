@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_form"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp64"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <include
+        android:id="@+id/form_bottom"
+        layout="@layout/form_bottom_ask_price_platform" />
+
+    <View
+        style="@style/view_line"
+        android:layout_above="@id/form_bottom" />
+
+
+</RelativeLayout>

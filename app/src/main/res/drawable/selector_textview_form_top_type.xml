@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 车辆类型 -->
+
+    <item android:state_enabled="false" android:color="#2290cb"/>
+    <item android:state_enabled="true" android:color="#3c3c3c"/>
+    <item android:state_pressed="true" android:color="#2290cb"/>
+    <item android:color="#3c3c3c"/>
+
+</selector>

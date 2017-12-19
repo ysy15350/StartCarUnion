@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_form" >
+
+    <!-- 修改公司名称 -->
+
+    <include layout="@layout/form_head" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        style="@style/base_edit"
+        android:hint="请输入昵称" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/btn_ok" />
+
+</LinearLayout>

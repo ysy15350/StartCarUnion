@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 添加联系人 -->
+
+    <corners android:radius="@dimen/dp5" />
+
+    <solid android:color="#f8f8f8" />
+
+    <stroke
+        android:width="@dimen/dp1"
+        android:color="#cecece" />
+
+</shape>

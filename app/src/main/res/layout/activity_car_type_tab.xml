@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_form">
+
+    <!-- 车辆品牌 -->
+
+
+    <GridView
+        android:id="@+id/gv_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp13"
+        android:background="@color/white"
+        android:horizontalSpacing="@dimen/dp1"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/dp1"
+        android:visibility="gone"></GridView>
+
+    <LinearLayout
+        android:id="@+id/ll_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:src="@mipmap/icon_nodata" />
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:text="暂无数据，点击刷新"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/sp20" />
+    </LinearLayout>
+
+</LinearLayout>

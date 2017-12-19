@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_form">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/form_title_layout">
+
+        <RelativeLayout style="@style/form_title_layout">
+
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp25"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/dp10"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_back"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginEnd="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_toRightOf="@id/btn_back"
+                android:background="@drawable/rounded_rectangle_new_message"
+                android:gravity="center_vertical">
+
+
+                <EditText
+                    android:id="@+id/et_keywords"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入型号"
+                    android:imeOptions="actionSearch"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/dp13"
+                    android:singleLine="true"
+                    android:textColor="@color/text_content"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/sp18" />
+
+                <View
+                    style="@style/view_line_vertical"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10" />
+
+                <ImageButton
+                    android:id="@+id/img_search"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@null"
+                    android:src="@mipmap/icon_search_blue" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_menu"
+                style="@style/form_select_text"
+                android:layout_marginTop="@dimen/dp25"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <custom_view.x_view.XListView
+        android:id="@+id/xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/devider_color"
+        android:dividerHeight="@dimen/dp16" />
+
+</LinearLayout>

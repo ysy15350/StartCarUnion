@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 询价列表 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp13"
+        android:orientation="horizontal">
+
+        <!-- 图标 -->
+
+        <ImageView
+            android:id="@+id/img_ask"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:src="@mipmap/icon_reply" />
+
+        <!-- 文字部分 -->
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp13"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="@dimen/dp7"
+            android:text="@string/default_text"
+            android:textColor="@color/text_list_content"
+            android:textSize="@dimen/sp22" />
+    </LinearLayout>
+
+
+</LinearLayout>

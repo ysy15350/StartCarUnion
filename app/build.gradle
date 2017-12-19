@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    //开启DataBinding数据绑定
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.ysy15350.startcarunion"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 40
+        versionName "1.0.39"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'org.xutils:xutils:3.3.38'
+    //xutils3框架
+    compile 'com.mobsandgeeks:android-saripaar:2.0.3'
+    //validation表单验证
+    testCompile 'junit:junit:4.12'
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    compile 'liji.library.dev:citypickerview:2.0.1'//城市三级联动选择
+    //    compile 'com.android.support:design:23.3.0'
+    //    compile 'com.android.support:support-v4:23.3.0'
+    //    compile 'com.android.support:recyclerview-v7:23.3.0'
+
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+}
+
+//引入了多个三方库.在调用的时候会出现版本对应不上的原因.就会出现:java.lang.NoClassDefFoundError: android.support.v4.animation.AnimatorCompatHelper,下面配置是解决此问题
+// 原理就是强制版本号统一
+//
+//configurations.all {
+//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//        def requested = details.requested
+//        if (requested.group == 'com.android.support') {
+//            if (!requested.name.startsWith("multidex")) {
+//                details.useVersion '24.1.0'
+//            }
+//        }
+//    }
+//}

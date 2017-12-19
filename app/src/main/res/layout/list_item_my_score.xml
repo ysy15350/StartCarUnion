@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp92"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <!-- 我的积分 -->
+
+    <LinearLayout
+        android:layout_width="@dimen/dp58"
+        android:layout_height="@dimen/dp58"
+        android:layout_marginLeft="@dimen/dp25"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="#435480"
+            android:textSize="@dimen/sp26" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="十二月"
+            android:textColor="#263f68"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/view_line_vertical"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="@dimen/dp13"
+            android:layout_height="@dimen/dp13"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/shape_score_circle" >
+        </ImageView>
+
+        <View
+            style="@style/view_line_vertical"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="签到"
+            android:textColor="@color/text_list_title"
+            android:textSize="@dimen/sp24" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="我的积分：0"
+            android:textColor="@color/text_list_content"
+            android:textSize="@dimen/sp20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp56"
+        android:text="+ 0"
+        android:textColor="#21c5c6"
+        android:textSize="@dimen/sp24" />
+
+</LinearLayout>

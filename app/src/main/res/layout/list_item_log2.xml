@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="log"
+            type="com.ysy15350.startcarunion.log.model.RequestLog" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <!-- 文字部分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp13"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="@dimen/dp64"
+                    android:layout_height="@dimen/dp22"
+                    android:background="@drawable/rounded_rectangle_new_message"
+                    android:gravity="center"
+                    android:text="@{log.code}"
+                    android:textColor="#1ed5c3"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="@dimen/dp64"
+                    android:layout_height="@dimen/dp22"
+                    android:layout_marginStart="@dimen/dp13"
+                    android:background="@drawable/rounded_rectangle_new_message"
+                    android:gravity="center"
+                    android:text="@{log.message}"
+                    android:textColor="#1ed5c3"
+                    android:textSize="@dimen/sp12" />
+
+
+                <TextView
+                    android:id="@+id/tv_isCache"
+                    android:layout_width="@dimen/dp64"
+                    android:layout_height="@dimen/dp22"
+                    android:layout_marginStart="@dimen/dp13"
+                    android:background="@drawable/rounded_rectangle_new_message"
+                    android:gravity="center"
+                    android:text="@{log.cache.toString()}"
+                    android:textColor="#1ed5c3"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/tv_cacheTime"
+                    android:layout_width="@dimen/dp64"
+                    android:layout_height="@dimen/dp22"
+                    android:layout_marginStart="@dimen/dp13"
+                    android:background="@drawable/rounded_rectangle_new_message"
+                    android:gravity="center"
+                    android:text="@{log.cacheTime}"
+                    android:textColor="#1ed5c3"
+                    android:textSize="@dimen/sp12" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <!-- 删除 -->
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginEnd="@dimen/dp13"
+                    android:layout_marginStart="@dimen/dp13"
+                    android:src="@mipmap/icon_shop_delete" />
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{log.url}"
+                android:textColor="@color/text_list_title"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp23"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_requestTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{log.requestTime}"
+                    android:textColor="@color/text_list_title"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/tv_responseTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{log.responseTime}"
+                    android:textColor="@color/text_list_time"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_params"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dp7"
+                android:text="@{log.paramStr}"
+                android:textColor="@color/text_list_content"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp2"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginStart="@dimen/dp78"
+            android:background="@drawable/shape_line_dashed"
+            android:layerType="software" />
+
+    </LinearLayout>
+</layout>

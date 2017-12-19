@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp78"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 留言 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- 图标 -->
+
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp13"
+            android:layout_marginStart="@dimen/dp13"
+            android:src="@mipmap/icon_shop_phone" />
+
+        <!-- 文字部分 -->
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/default_text"
+            android:textColor="@color/text_list_title"
+            android:textSize="@dimen/sp22" />
+
+        <!-- 编辑 -->
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginStart="@dimen/dp13"
+            android:src="@mipmap/icon_shop_edit" />
+
+        <!-- 删除 -->
+
+        <ImageView
+            android:id="@+id/img_del"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginEnd="@dimen/dp13"
+            android:layout_marginStart="@dimen/dp13"
+            android:src="@mipmap/icon_shop_delete" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:layout_marginEnd="@dimen/dp13"
+        android:layout_marginStart="@dimen/dp13"
+        android:background="@drawable/shape_line_dashed"
+        android:layerType="software" />
+
+</LinearLayout>

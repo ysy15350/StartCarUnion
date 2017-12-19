@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_form">
+
+    <!-- 顶部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp181"
+        android:background="@mipmap/bg_tab3">
+
+        <!-- 设置 -->
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dp13">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_marginEnd="@dimen/dp5"
+                android:contentDescription="@string/tab1name"
+                android:src="@mipmap/icon_setting"
+                android:tag="tab_img" />
+
+            <TextView
+                android:id="@+id/tv_setting"
+                style="@style/tab3_top_text"
+                android:text="@string/setting" />
+        </LinearLayout>
+
+        <!-- 头像+登录/注册 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_setting"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- 头像 -->
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="@dimen/dp75"
+                android:layout_height="@dimen/dp75"
+                android:layout_marginEnd="@dimen/dp13"
+                android:layout_marginStart="@dimen/dp30"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_head" />
+
+            <LinearLayout
+                android:id="@+id/ll_author"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+                <!-- 登录 -->
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    style="@style/tab3_top_text"
+                    android:text="@string/login" />
+
+
+                <!-- 分割线 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp2"
+                    android:text="/"
+                    android:textColor="@color/white" />
+
+                <!-- 注册 -->
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    style="@style/tab3_top_text"
+                    android:text="@string/register" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_userName"
+                style="@style/tab3_top_text"
+                android:text="@string/default_text"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 顶部 end -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout style="@style/base_form">
+
+            <!-- 菜单 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_1"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_1" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_1" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+
+                <View style="@style/view_line_tab3" />
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_2"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_2" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_2" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+
+                <View style="@style/view_line_tab3" />
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_3"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_3" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_3" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+
+                <View style="@style/view_line_tab3" />
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_4"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_4" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_4" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+
+                <View style="@style/view_line_tab3" />
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_5"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_5" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_5" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 仅商家可用 -->
+
+            <LinearLayout
+                android:id="@+id/ll_is_business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp13"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!-- 我的店铺 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_6"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_6" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_6" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+
+                <View style="@style/view_line_tab3" />
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_7"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_7" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_7" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+
+                <View style="@style/view_line_tab3" />
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_8"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_8" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_8" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 仅商家可用end -->
+
+            <View style="@style/view_line_tab3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp13"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!-- 我的资料 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_9"
+                    style="@style/tab3_menu_item">
+
+                    <ImageView
+                        style="@style/tab3_menu_item_icon"
+                        android:src="@mipmap/icon_menu_9" />
+
+                    <TextView
+                        style="@style/tab3_menu_item_text"
+                        android:text="@string/tab3_menu_9" />
+
+                    <ImageView style="@style/tab3_menu_item_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 菜单end -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

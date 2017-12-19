@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_form">
+
+    <!-- 注册 -->
+
+    <include layout="@layout/form_head" />
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        style="@style/tab3_menu_item">
+
+        <ImageView
+            style="@style/tab3_menu_item_icon"
+            android:src="@mipmap/icon_forgot_pwd" />
+
+        <TextView
+            style="@style/register_text"
+            android:text="手机验证找回密码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_5"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_5" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_5" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_5" />
+
+            <Button
+                android:id="@+id/btn_send_code"
+                style="@style/btn_get_code" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_6"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_6" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_6" />
+
+            <EditText
+                android:id="@+id/et_verification_code"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_6" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_7"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_7" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="新密码" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_7"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_8"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_7" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="确认新密码" />
+
+            <EditText
+                android:id="@+id/et_password1"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_8"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/btn_ok"
+        android:text="确认修改" />
+
+</LinearLayout>

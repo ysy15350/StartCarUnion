@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/pop_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp32">
+
+        <LinearLayout
+            android:id="@+id/ll_close"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="right"
+            android:layout_marginEnd="@dimen/dp13"
+            android:layout_marginTop="@dimen/dp13"
+            android:background="@drawable/shape_close_circle_call"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:src="@mipmap/icon_close_call" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="一键拨打"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp22" />
+
+        <ListView
+            android:id="@+id/lv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

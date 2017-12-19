@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp118"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 留言 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- 图标 -->
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="@dimen/dp57"
+            android:layout_height="@dimen/dp57"
+            android:layout_marginEnd="@dimen/dp13"
+            android:layout_marginStart="@dimen/dp13"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_head" />
+
+        <!-- 文字部分 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp13"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fullName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp23"
+                    android:layout_weight="1"
+                    android:text="@string/default_text"
+                    android:textColor="@color/text_list_title"
+                    android:textSize="@dimen/sp24" />
+
+                <TextView
+                    android:id="@+id/tv_new"
+                    android:layout_width="@dimen/dp64"
+                    android:layout_height="@dimen/dp22"
+                    android:layout_marginTop="@dimen/dp18"
+                    android:background="@drawable/rounded_rectangle_new_message"
+                    android:gravity="center"
+
+                    android:text="新消息"
+                    android:textColor="#1ed5c3"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/dp7"
+                android:text="@string/default_text"
+                android:textColor="@color/text_list_content"
+                android:textSize="@dimen/sp22" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginStart="@dimen/dp78"
+        android:background="@drawable/shape_line_dashed"
+        android:layerType="software" />
+
+</LinearLayout>

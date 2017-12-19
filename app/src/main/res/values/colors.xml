@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 纯色 -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="blue">#499BF7</color>
+
+    <!-- ***********************背景颜色*********************** -->
+
+
+    <!-- 窗体默认背景颜色 -->
+    <color name="bg_form">#ebebeb</color>
+
+    <!-- 窗体标题背景色 -->
+    <color name="bg_form_head">#2091cb</color>
+
+    <!-- 密码文本框背景颜色 -->
+    <color name="bg_password">#50194e5f</color>
+
+    <!-- ***********************背景颜色end*********************** -->
+
+
+    <!-- ***********************文本字体颜色*********************** -->
+    <!-- 文本颜色 -->
+    <!-- 标题 -->
+    <color name="text_title">#414141</color>
+    <!-- 内容 -->
+    <color name="text_content">#666666</color>
+    <!-- 数字 -->
+    <color name="text_number">#fde401</color>
+
+    <!-- 金额文本 -->
+    <color name="text_money">#fd7d00</color>
+
+    <!-- 积分文本 -->
+    <color name="text_score">#f4a733</color>
+
+    <!-- 提示文本 -->
+    <color name="text_hint">#cccccc</color>
+
+    <!-- 输入框文本 -->
+    <color name="text_edit">#222222</color>
+
+    <!-- 列表标题 -->
+    <color name="text_list_title">#000000</color>
+    <!-- 列表内容 -->
+    <color name="text_list_content">#919191</color>
+    <!-- 列表时间 -->
+    <color name="text_list_time">#c2c2c2</color>
+
+    <!-- ***********************文本字体颜色end*********************** -->
+
+
+    <!-- ***********************按钮颜色*********************** -->
+
+
+    <!-- 按钮文本颜色 -->
+    <!-- 默认按钮颜色 -->
+    <color name="btn_normal">#2091cb</color>
+    <!-- 不可用 -->
+    <color name="btn_disable">#888888</color>
+    <color name="bg_btn1">#ffb93d</color>
+    <color name="bg_btn2">#ffb900</color>
+    <color name="bg_btn3">#06cb9d</color>
+    <color name="bg_btn4">#f7b034</color>
+
+    <!-- 按钮背景颜色 -->
+    <color name="bg_btn_normal">#2a2c2d</color>
+
+    <!-- 按钮背景颜色 -->
+    <color name="bg_btn_disable">#2a2c2d</color>
+
+    <!-- ***********************按钮颜色end*********************** -->
+
+
+    <!-- ***********************页面特有颜色*********************** -->
+
+    <!-- 分割线颜色 -->
+    <color name="devider_color">#e5e5e5</color>
+    <color name="devider_color_mycollection_virtual">#e5e5e5</color>
+
+    <!-- 底部tabBar -->
+    <color name="main_bottom_menu">#555555 </color>
+    <color name="main_bottom_menu_1">#0869a0</color>
+
+    <color name="register_text">#858585</color>
+
+    <!-- ***********************登录页面特有颜色*********************** -->
+
+
+    <!-- ***********************登录页面特有颜色end*********************** -->
+
+
+    <!-- ***********************页面特有颜色end*********************** -->
+
+    <color name="multiple_image_select_primaryDark">#212121</color>
+
+
+</resources>

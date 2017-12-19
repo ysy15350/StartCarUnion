@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/base_form">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_contact_us" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <!-- 个人资料 -->
+
+        <include layout="@layout/form_head" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/ll_qr_code"
+                android:layout_width="@dimen/dp262"
+                android:layout_height="@dimen/dp262"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp100"
+                android:background="@drawable/shape_qr_code">
+
+                <custom_view.qrcode.CanvasRQ
+                    android:id="@+id/img_qr_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:iconHeight="@dimen/dp30"
+                    app:iconWidth="@dimen/dp30"
+                    app:qrCodeHeight="@dimen/dp262"
+                    app:qrCodeWidth="@dimen/dp262"
+                    app:url="http://qidian.59156.cn/Uploads/Download/2017-09-13/59b909abec192.apk" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp52"
+                android:layout_marginTop="@dimen/dp20"
+                android:src="@mipmap/icon_contatct_us_logo" />
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55"
+                android:layout_below="@id/ll_qr_code"
+                android:layout_marginEnd="@dimen/dp33"
+                android:layout_marginStart="@dimen/dp33"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@mipmap/icon_contatc_us_phone"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp33"
+                    android:layout_height="@dimen/dp33"
+                    android:src="@mipmap/icon_phone_contact" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp13"
+                    android:text="@string/tell"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp24"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_msg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55"
+                android:layout_below="@id/ll_phone"
+                android:layout_marginEnd="@dimen/dp33"
+                android:layout_marginStart="@dimen/dp33"
+                android:layout_marginTop="@dimen/dp13"
+                android:background="@mipmap/icon_contact_us_msg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp33"
+                    android:layout_height="@dimen/dp33"
+                    android:src="@mipmap/icon_contact_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp13"
+                    android:text="联系我们"
+                    android:textColor="#1ed5c3"
+                    android:textSize="@dimen/sp24"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60"
+                android:layout_below="@id/ll_msg"
+                android:gravity="center"
+                android:text="@string/company_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

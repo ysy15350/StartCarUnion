@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--android:layout_height="@dimen/dp185"-->
+
+    <!-- 我的收藏 -->
+    <!--android:layout_height="@dimen/dp137"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp13">
+
+        <!-- 图标 -->
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="@dimen/dp84"
+            android:layout_height="@dimen/dp84"
+            android:layout_marginEnd="@dimen/dp13"
+            android:layout_marginStart="@dimen/dp13" />
+
+        <!-- 文字部分 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:text="公司名称"
+                android:textColor="@color/text_list_title"
+                android:textSize="@dimen/sp24" />
+
+            <TextView
+                android:id="@+id/tv_pid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:text="主营：业务业务"
+                android:textColor="@color/text_list_content"
+                android:textSize="@dimen/sp22" />
+
+            <TextView
+                android:id="@+id/tv_tell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:text="电话：-"
+                android:textColor="@color/text_list_content"
+                android:textSize="@dimen/sp22" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp13"
+            android:layout_marginTop="@dimen/dp13"
+            android:background="@color/devider_color_mycollection_virtual" />
+
+        <!-- 右边电话部分 -->
+
+        <LinearLayout
+            android:id="@+id/ll_call"
+            android:layout_width="@dimen/dp92"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:src="@mipmap/icon_phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:text="拨打"
+                android:textColor="@color/text_list_title"
+                android:textSize="@dimen/sp22" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginEnd="@dimen/dp11"
+        android:layout_marginStart="@dimen/dp11"
+        android:background="@color/devider_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_cancel_collection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp47"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp26"
+            android:layout_height="@dimen/dp26"
+            android:src="@mipmap/icon_cancel_collection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:text="取消收藏"
+            android:textColor="@color/text_list_title"
+            android:textSize="@dimen/sp22" />
+    </LinearLayout>
+
+</LinearLayout>

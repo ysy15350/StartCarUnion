@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">启点车讯</string>
+
+    <!--联系我们，公司电话-->
+    <string name="tell">13880061669/13981809904</string>
+    <string name="company_name">新启点广告</string>
+
+    <string name="default_text">-</string>
+    <string name="edit_hint">请输入</string>
+
+    <!-- 按钮文本 -->
+    <string name="btn_get_code">获取验证码</string>
+    <string name="btn_register">立即注册</string>
+    <string name="btn_register_underline"><u>立即注册</u></string>
+    <string name="btn_login">立即登录</string>
+    <string name="btn_login_underline"><u>立即登录</u></string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_save">保存</string>
+    <string name="forgot_pwd_underline"><u>忘记密码</u></string>
+
+    <string name="label_select_picture">选择照片</string>
+
+    <!-- 首页选项卡文本 -->
+    <string name="tab1name">首页</string>
+    <string name="tab2name">留言</string>
+    <string name="tab3name">联系我们</string>
+
+
+    <!-- 首页选项卡文本 -->
+    <string name="ask_tab1name">待回复</string>
+    <string name="ask_tab2name">发布询价</string>
+    <string name="ask_tab3name">我的发布</string>
+
+    <!-- 我的顶部 -->
+    <string name="setting">设置</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+
+    <!-- pop菜单 -->
+    <string name="pop_menu_1">我的店铺</string>
+    <string name="pop_menu_2">我的访客</string>
+    <string name="pop_menu_3">我的联系人</string>
+    <string name="pop_menu_4">我的积分</string>
+    <string name="pop_menu_5">我的足迹</string>
+    <string name="pop_menu_6">我的收藏</string>
+    <string name="pop_menu_7">我的评论</string>
+    <string name="pop_menu_8">已拨电话</string>
+
+    <!-- tab1菜单 -->
+    <string name="tab1_menu_1">装潢改装</string>
+    <string name="tab1_menu_2">机油辅料</string>
+    <string name="tab1_menu_3">汽保工具</string>
+    <string name="tab1_menu_4">汽修厂家</string>
+    <string name="tab1_menu_5">询价平台</string>
+    <string name="tab1_menu_6">促销商家</string>
+    <string name="tab1_menu_7">小车配件</string>
+    <string name="tab1_menu_8">交易担保</string>
+    <string name="tab1_menu_9">积分签到</string>
+    <string name="tab1_menu_7_1">CAR ACCESSORIES</string>
+    <string name="tab1_menu_8_1">TRADING GUARANTEE</string>
+    <string name="tab1_menu_9_1">THE INTEGRAL SIGN IN</string>
+
+    <!-- tab3菜单 -->
+    <string name="tab3_menu_1">我的收藏</string>
+    <string name="tab3_menu_2">我的评论</string>
+    <string name="tab3_menu_3">我的积分</string>
+    <string name="tab3_menu_4">我的足迹</string>
+    <string name="tab3_menu_5">我的消息</string>
+    <string name="tab3_menu_6">我的店铺</string>
+    <string name="tab3_menu_7">我的访客</string>
+    <string name="tab3_menu_8">我的联系人</string>
+    <string name="tab3_menu_9">我的资料</string>
+
+    <!-- setting菜单 -->
+    <string name="setting_menu_1">清除缓存</string>
+    <string name="setting_menu_2">检测更新</string>
+    <string name="setting_menu_3">联系我们</string>
+    <string name="setting_menu_4">注销</string>
+
+    <!-- 我的页面end -->
+
+
+    <!-- 注册标题 -->
+    <string name="register_1">公司图片</string>
+    <string name="register_2">公司名称</string>
+    <string name="register_3">详细地址</string>
+    <string name="register_4">类型</string>
+    <string name="register_5">手机号</string>
+    <string name="register_6">验证码</string>
+    <string name="register_7">密码</string>
+    <string name="register_8">确认密码</string>
+    <string name="register_hint_2">请输入公司名称</string>
+    <string name="register_hint_3">点击选择详细地址</string>
+    <string name="register_hint_5">请输入手机号</string>
+    <string name="register_hint_6">请输入验证码</string>
+    <string name="register_hint_7">请输入密码</string>
+    <string name="register_hint_8">请再次输入密码</string>
+    <string name="register_phone_error">手机号格式错误</string>
+    <string name="register_password_error">至少设置6位密码</string>
+    <string name="register_password_different">密码输入不一致</string>
+
+    <!-- 下拉刷新 -->
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新数据</string>
+    <string name="header_hint_refresh_loading">正在加载...</string>
+    <string name="header_hint_refresh_time">上次更新时间：</string>
+    <string name="footer_hint_load_normal">查看更多</string>
+    <string name="footer_hint_load_ready">松开载入更多</string>
+
+    <!-- 标题右边菜单文本 -->
+    <string name="select_title">筛选</string>
+    <string name="edit">编辑</string>
+    <string name="previous">上一个</string>
+    <string name="next">下一个</string>
+    <!--权限-->
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="permission_write_storage_rationale">Storage write permission is needed to save the image.</string>
+
+
+    <!--选择照片-->
+    <string name="album_view">选择图片</string>
+    <string name="image_view">单击选择</string>
+    <string name="add">确定</string>
+    <string name="selected">已选</string>
+    <string name="limit_exceeded">最多能选 %d 张</string>
+
+</resources>

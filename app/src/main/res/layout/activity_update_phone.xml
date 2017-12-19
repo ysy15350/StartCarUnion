@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_form">
+
+    <!-- 修改公司名称 -->
+
+    <include layout="@layout/form_head" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        style="@style/base_edit"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/base_edit"
+        android:hint="请输入登录密码"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp58"
+        android:layout_marginEnd="@dimen/dp13"
+        android:layout_marginStart="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp13"
+        android:background="@drawable/shape_edittext"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/base_edit"
+            android:layout_width="0dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:hint="请输入新手机号"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btn_send_code"
+            android:layout_width="@dimen/dp115"
+            android:layout_height="@dimen/dp38"
+            android:layout_marginRight="@dimen/dp13"
+            android:background="@drawable/rounded_rectangle_new_message"
+            android:text="获取验证码"
+            android:textColor="#1ed5c3"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp58"
+        android:layout_marginEnd="@dimen/dp13"
+        android:layout_marginStart="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp13"
+        android:background="@drawable/shape_edittext"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/base_edit"
+            android:layout_width="0dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:hint="请输入验证码" />
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp13"
+            android:src="@mipmap/icon_success"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/btn_ok" />
+
+</LinearLayout>

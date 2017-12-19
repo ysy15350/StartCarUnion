@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ysy15350.startcarunion.uCrop.CropTestActivity">
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/btn_ok" />
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:src="@mipmap/bg_tab3" />
+
+</LinearLayout>

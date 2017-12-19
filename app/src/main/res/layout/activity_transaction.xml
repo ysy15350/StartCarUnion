@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_form"
+    android:background="@color/white">
+
+    <!-- 个人资料 -->
+
+    <include layout="@layout/form_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_transaction" />
+
+
+        <ImageView
+            android:layout_width="@dimen/dp230"
+            android:layout_height="@dimen/dp83"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp130"
+            android:src="@mipmap/icon_transaction_logo_1" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dp215"
+            android:layout_height="@dimen/dp215"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp240"
+            android:background="@drawable/shape_qr_code"
+            android:padding="@dimen/dp13">
+
+            <ImageView
+                android:id="@+id/img_qr_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_transaction" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

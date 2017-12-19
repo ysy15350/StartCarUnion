@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    style="@style/base_form">
+
+    <!-- 注册 -->
+
+    <include layout="@layout/form_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_menu_1"
+            style="@style/tab3_menu_item"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_1" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_1" />
+
+            <custom_view.image.RoundImageView
+                android:id="@+id/img_head"
+                android:layout_width="@dimen/dp57"
+                android:layout_height="@dimen/dp57"
+                android:layout_marginEnd="@dimen/dp13"
+                android:layout_marginStart="@dimen/dp13"
+                android:src="@mipmap/icon_head"
+                zhy:borderRadius="20dp"
+                zhy:type="round" />
+
+            <ImageView
+
+                style="@style/tab3_menu_item_right" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_2"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_2" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_2" />
+
+            <EditText
+                android:id="@+id/et_fullname"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_2" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_3"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_3" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_3" />
+
+            <TextView
+                android:id="@+id/et_address"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp13"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_menu_4"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_4" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_4" />
+
+            <TextView
+                style="@style/text_content"
+                android:text="选择后仅管理员可修改" />
+
+
+            <View
+                style="@style/view_line_vertical"
+                android:layout_margin="@dimen/dp20" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp13"
+                android:gravity="center"
+                android:text="请选择"
+                android:textColor="@color/register_text"
+                android:textSize="@dimen/sp18" />
+
+            <ImageView style="@style/tab3_menu_item_right" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_5"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_5" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_5" />
+
+            <EditText
+                android:id="@+id/et_mobile"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_5"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/btn_send_code"
+                style="@style/btn_get_code" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_6"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_6" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_6" />
+
+            <EditText
+                android:id="@+id/et_verification_code"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_6"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_7"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_7" />
+
+            <TextView
+                style="@style/register_text"
+                android:text="@string/register_7" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/register_edit"
+
+                android:hint="@string/register_hint_7"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_menu_8"
+            style="@style/tab3_menu_item">
+
+            <ImageView
+                style="@style/tab3_menu_item_icon"
+                android:src="@mipmap/icon_register_7" />
+
+            <TextView
+                style="@style/register_text"
+
+                android:text="@string/register_8" />
+
+            <EditText
+                android:id="@+id/et_password1"
+                style="@style/register_edit"
+                android:hint="@string/register_hint_8"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/btn_ok"
+        android:text="@string/btn_register" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp45"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有账号？"
+            android:textColor="#313131"
+            android:textSize="@dimen/sp22" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="@string/btn_login_underline"
+            android:textColor="#1fd6c4"
+            android:textSize="@dimen/sp22" />
+    </LinearLayout>
+
+</LinearLayout>

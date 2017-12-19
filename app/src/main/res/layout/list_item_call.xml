@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 拨打电话 -->
+
+    <LinearLayout
+        android:id="@+id/ll_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp58"
+        android:layout_marginEnd="@dimen/dp24"
+        android:layout_marginStart="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/shape_btn"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:src="@mipmap/icon_mobile" />
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp13"
+            android:gravity="center"
+            android:text="@string/default_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp22" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp58"
+
+        android:layout_marginEnd="@dimen/dp24"
+        android:layout_marginStart="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/shape_call_white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:src="@mipmap/icon_tel" />
+
+        <TextView
+            android:id="@+id/tv_tell"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp13"
+            android:gravity="center"
+            android:text="@string/default_text"
+            android:textColor="#2391cc"
+            android:textSize="@dimen/sp22" />
+
+    </LinearLayout>
+
+</LinearLayout>

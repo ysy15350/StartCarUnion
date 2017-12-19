@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp40"
+    android:layout_marginStart="@dimen/dp40" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/shape_dialog"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- 签到 -->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64"
+            android:background="@drawable/shape_dialog_top"
+            android:gravity="center"
+            android:text="签到成功"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp262"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp89"
+                android:layout_marginEnd="@dimen/dp45"
+                android:layout_marginStart="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp20"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_score" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="恭喜获得"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp30" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/text_score"
+                    android:textSize="@dimen/sp30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp30" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/btn_ok"
+                android:layout_width="@dimen/dp284"
+                android:layout_height="@dimen/dp73"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/icon_btn_score"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_close"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_close_circle"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:src="@mipmap/icon_close" />
+    </LinearLayout>
+
+</RelativeLayout>
